@@ -1,0 +1,56 @@
+name: Update Scholar and publish Pages
+
+on:
+  push: {}
+  workflow_dispatch:
+  schedule:
+    - cron: '23 1 * * *' # 09:23 Singapore time; GitHub scheduling can be delayed.
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check Scholar secret
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+        run: |
+          python - <<'PYCODE'
+          import os, sys
+          if not os.environ.get('SERPAPI_API_KEY', '').strip():
+              print('::error::Missing SERPAPI_API_KEY. Add it under Settings > Secrets and variables > Actions, then rerun this workflow.')
+              sys.exit(2)
+          PYCODE
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Refresh Scholar data
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python update_scholar.py
+      - name: Upload website only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - name: Publish Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
