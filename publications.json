@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Barrier Lyapunov functions for the control of output-constrained nonlinear systems"
+  },
+  {
+    "id": "2",
+    "title": "Switched linear systems: control and design"
+  },
+  {
+    "id": "3",
+    "title": "Stable adaptive neural network control"
+  },
+  {
+    "id": "4",
+    "title": "Adaptive tracking control of uncertain MIMO nonlinear systems with input constraints"
+  },
+  {
+    "id": "5",
+    "title": "Adaptive neural control of uncertain MIMO nonlinear systems"
+  },
+  {
+    "id": "6",
+    "title": "Adaptive neural network control for strict-feedback nonlinear systems using backstepping design"
+  },
+  {
+    "id": "7",
+    "title": "Adaptive neural network control of robotic manipulators"
+  },
+  {
+    "id": "8",
+    "title": "Robust adaptive neural network control for a class of uncertain MIMO nonlinear systems with input nonlinearities"
+  },
+  {
+    "id": "9",
+    "title": "Stability theory of switched dynamical systems"
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "topic": "Embodied Intelligence and Robot Learning",
+    "description": "Connecting perception, learning and action through the dynamics of physical robots. Representative work spans learning from human interaction, compliance in uncertain environments and safe reinforcement learning for autonomous vehicles.",
+    "papers": [
+      {
+        "title": "Barrier Lyapunov Function-Based Safe Reinforcement Learning for Autonomous Vehicles With Optimized Backstepping",
+        "year": "2024",
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "url": "https://doi.org/10.1109/tnnls.2022.3186528",
+        "note": "Combining reinforcement learning, backstepping and safety constraints."
+      },
+      {
+        "title": "Human–Robot Collaboration Based on Motion Intention Estimation",
+        "year": "2014",
+        "venue": "IEEE/ASME Transactions on Mechatronics",
+        "url": "https://doi.org/10.1109/tmech.2013.2264533",
+        "note": "Motion-intention estimation for physical collaboration."
+      },
+      {
+        "title": "Learning compliance control of robot manipulators in contact with the unknown environment",
+        "year": "2010",
+        "venue": "2010 IEEE International Conference on Automation Science and Engineering",
+        "url": "https://doi.org/10.1109/coase.2010.5584228",
+        "note": "Learning compliant behaviour during contact with an unknown environment."
+      }
+    ]
+  },
+  {
+    "topic": "Social Robotics and Human-Robot Interaction",
+    "description": "Developing robots that understand and respond to people through intention estimation, affective interaction and socially aware navigation. The focus is on how robotic behaviour can support natural, cooperative interaction.",
+    "papers": [
+      {
+        "title": "Role playing learning for socially concomitant mobile robot navigation",
+        "year": "2018",
+        "venue": "CAAI Transactions on Intelligence Technology",
+        "url": "https://doi.org/10.1049/trit.2018.0008",
+        "note": "Role-playing learning for socially aware companion navigation."
+      },
+      {
+        "title": "Human–Robot Collaboration Based on Motion Intention Estimation",
+        "year": "2014",
+        "venue": "IEEE/ASME Transactions on Mechatronics",
+        "url": "https://doi.org/10.1109/tmech.2013.2264533",
+        "note": "Motion-intention estimation for physical collaboration."
+      },
+      {
+        "title": "Active affective facial analysis for human-robot interaction",
+        "year": "2008",
+        "venue": "RO-MAN 2008 - The 17th IEEE International Symposium on Robot and Human Interactive Communication",
+        "url": "https://doi.org/10.1109/roman.2008.4600647",
+        "note": "Affective facial analysis for human–robot interaction."
+      }
+    ]
+  },
+  {
+    "topic": "Robust and Secure Autonomous Systems",
+    "description": "Designing autonomous and networked systems that account for uncertainty, communication limits and security. Recent work develops coded and event-triggered control, alongside stability analysis for coordinated multiagent behaviour.",
+    "papers": [
+      {
+        "title": "Secure Asymptotic Consensus Control for MASs",
+        "year": "2026",
+        "venue": "IEEE Transactions on Automatic Control",
+        "url": "https://doi.org/10.1109/tac.2025.3593188",
+        "note": "Secure asymptotic consensus in multiagent systems."
+      },
+      {
+        "title": "Rate-Coded Secure Control for Multiagent Systems",
+        "year": "2025",
+        "venue": "IEEE Transactions on Automatic Control",
+        "url": "https://doi.org/10.1109/tac.2024.3475426",
+        "note": "Rate-coded communication for secure distributed control."
+      },
+      {
+        "title": "Coded event-triggered control for nonlinear systems",
+        "year": "2024",
+        "venue": "Automatica",
+        "url": "https://doi.org/10.1016/j.automatica.2024.111753",
+        "note": "Coded event-triggered feedback for nonlinear systems."
+      }
+    ]
+  },
+  {
+    "topic": "Safety-Critical and Constrained Control",
+    "description": "Making state, output and actuator limits explicit in the control design. Barrier Lyapunov Functions, adaptive tracking and safe learning connect constraint satisfaction with closed-loop stability under the assumptions of each design.",
+    "papers": [
+      {
+        "title": "Barrier Lyapunov Function-Based Safe Reinforcement Learning for Autonomous Vehicles With Optimized Backstepping",
+        "year": "2024",
+        "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+        "url": "https://doi.org/10.1109/tnnls.2022.3186528",
+        "note": "Combining reinforcement learning, backstepping and safety constraints."
+      },
+      {
+        "title": "Barrier Lyapunov functions for the control of output-constrained nonlinear systems",
+        "year": "2009",
+        "venue": "Automatica, 45(4), 918–927.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0005109808005608",
+        "note": "Barrier Lyapunov Functions for output-constrained nonlinear control."
+      },
+      {
+        "title": "Adaptive tracking control of uncertain MIMO nonlinear systems with input constraints",
+        "year": "2011",
+        "venue": "Automatica, 47(3), 452–465.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0005109811000409",
+        "note": "Adaptive tracking with explicit actuator-input constraints."
+      }
+    ]
+  },
+  {
+    "topic": "Adaptive Neural Control",
+    "description": "Combining neural-network approximation with adaptive and Lyapunov-based control for uncertain nonlinear dynamics. The research develops stable learning and tracking methods for strict-feedback systems, MIMO systems and nonlinear actuator behaviour.",
+    "papers": [
+      {
+        "title": "Adaptive neural control of uncertain MIMO nonlinear systems",
+        "year": "2004",
+        "venue": "IEEE Transactions on Neural Networks, 15(3), 674–692.",
+        "url": "https://ieeexplore.ieee.org/document/1296694/",
+        "note": "Adaptive neural control of uncertain MIMO nonlinear systems."
+      },
+      {
+        "title": "Adaptive neural network control for strict-feedback nonlinear systems using backstepping design",
+        "year": "2000",
+        "venue": "Automatica, 36(12), 1835–1846.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0005109800001163",
+        "note": "Backstepping-based neural control of strict-feedback dynamics."
+      },
+      {
+        "title": "Robust adaptive neural network control for a class of uncertain MIMO nonlinear systems with input nonlinearities",
+        "year": "2010",
+        "venue": "IEEE Transactions on Neural Networks, 21(5), 796–812.",
+        "url": "https://doi.org/10.1109/TNN.2010.2042611",
+        "note": "Robust neural control in the presence of input nonlinearities."
+      }
+    ]
+  }
+]
